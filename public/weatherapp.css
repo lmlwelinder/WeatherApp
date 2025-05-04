@@ -1,0 +1,87 @@
+body {
+    background-color: lightblue;
+    font-family: "Montserrat", sans-serif;
+}
+
+body#loginpage {
+    overflow: hidden;
+}
+
+body#loginpage fieldset {
+    padding: 2ex 5ex;
+    max-width: fit-content;
+}
+
+#loginpage >div {
+    height: 100vh;
+    flex-direction: column;
+}
+
+.buttons {
+    width: 20%;
+}
+
+.buttons button{
+    width: 100%;
+}
+
+.centered {
+    text-align: center;
+}
+
+.centerhv {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    display: inline-block;
+    color: red;
+}
+
+.fit {
+    margin-inline: auto;
+    max-width: fit-content;
+}
+
+.fixed {
+    table-layout: fixed;
+}
+
+form.aligned {
+    display: table;
+}
+
+form.aligned p {
+    display: table-row;
+}
+
+form.aligned label {
+    display: table-cell;
+    padding-right: 1ex;
+}
+
+form.aligned input {
+    display: table-cell;
+}
+
+.locationslot {
+    border: solid 2px black;
+    height: 25ex;
+}
+
+.locationtable {
+    width: 80%;
+    border-spacing: 2ex;
+}
+
+.slottable {
+    width: 100%;
+    height: 100%;
+}
+
+.slottable th{
+    font-size: 20pt;
+    font-weight: bold;
+}

@@ -1,0 +1,47 @@
+<%- include('header.html') %>
+
+<body>
+  <h1 class="centered">Manage Locations</h1>
+  <div class="centerhv">
+    <form action="/locations/update" method="post">
+      <table class="fit">
+	<tr>	
+	  <td>
+	    Location 1: 
+	  </td>
+	  <td class="infoline"><%- slot1 %></td>
+	</tr>
+	<tr>
+	  <td>
+	    Location 2: 
+	  </td>
+	  <td class="infoline"><%- slot2 %></td>
+	</tr>
+	<tr>
+	  <td>
+	    Location 3: 
+	  </td>
+	  <td class="infoline"><%- slot3 %></td>
+	</tr>
+	<tr>
+	  <td>
+	    Location 4: 
+	  </td>
+	  <td class="infoline"><%- slot4 %></td>
+	</tr>
+      </table>
+  </div>
+  <div class="centerhv">
+    <table class="buttons fixed">
+      <tr>
+	<td><button type="submit">Save</button></td>
+      </tr>
+      <tr>
+	<td><button type="button" onclick='location.href="/locations"'>Cancel</button></td>
+      </tr>
+    </table>
+  </form>
+  </div>
+</body>
+
+<%- include('footer.html') %>

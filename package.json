@@ -1,0 +1,19 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "CMSC335 final project",
+  "main": "weatherapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Welinder",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "mongodb": "^6.16.0"
+  }
+}

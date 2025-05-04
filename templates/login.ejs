@@ -1,0 +1,26 @@
+<%- include('header.html') %>
+
+<body id="loginpage">
+  <div class="centerhv">
+    <form method="post" class="aligned">
+      <fieldset>
+	<legend>Login</legend>
+	<p>
+	  <label>Username: </label><input type="text" name="username" id="username"><br>
+	</p>
+	<p>
+	  <label>Password: </label><input type="password" name="password" id="password"><br>
+	</p>
+	<button type="submit" formaction="/login/check">Login</button>
+	<button type="submit" formaction="/login/create">Create new account</button>
+      </fieldset>
+    </form>
+    <div class="centered">
+      <div class="error">
+	<%- message %>
+      </div>
+    </div>
+  </div>
+</body>
+
+<%- include('footer.html') %>

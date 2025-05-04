@@ -1,0 +1,29 @@
+<%- include('header.html') %>
+
+<body id="locationbody">
+  <h1 class="centered">Locations</h1>
+  <div class="centerhv">
+    <table class="fit fixed locationtable">
+      <tr>
+	<td class="locationslot"><%- slot1 %></td>
+	<td class="locationslot"><%- slot2 %></td>
+      </tr>
+      <tr>
+	<td class="locationslot"><%- slot3 %></td>
+	<td class="locationslot"><%- slot4 %></td>
+      </tr>
+    </table>
+  </div>
+  <div class="centerhv">
+    <table class="buttons fixed">
+      <tr>
+	<td><button type="button" onclick='location.href="/managelocations"'>Manage Locations</button></td>
+      </tr>
+      <tr>
+	<td><button type="button" onclick='location.href="/logout"'>Logout</button></td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+<%- include('footer.html') %>
