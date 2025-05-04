@@ -15,7 +15,7 @@ const { MongoClient } = require('mongodb');
 //    username: <str>
 //    locations: <array[str]>
 
-const portNumber = 5000;
+const portNumber = process.env.PORT || 5000;
 const app = express();
 
 const mongoURI = `mongodb+srv://${process.env.MONGO_DB_USERNAME}:${process.env.MONGO_DB_PASSWORD}@cluster0.9jgzmk4.mongodb.net/${process.env.MONGO_DB_NAME}?retryWrites=true&w=majority&appName=Cluster0`
