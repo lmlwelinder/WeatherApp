@@ -4,9 +4,9 @@ Group Members: Lucas Welinder (directory id: lmlwelin)
 
 App Description: Allows users to keep track of weather from a number of locations. Data will refresh every five minutes.
 
-YouTube Video Link: https://www.youtube.com/[TODO]
+YouTube Video Link: https://www.youtube.com/watch?v=5wZ-ziSaPlE
 
-APIs: WeatherAPI (https://www.weatherapi.com)
+APIs: WeatherAPI (https://www.weatherapi.com), specifically http://api.weatherapi.com/v1/current.json
 
 Contact Email:  lmlwelin@terpmail.umd.edu
 
