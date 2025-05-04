@@ -45,6 +45,14 @@ app.use(session({
 // ========================================== //
 let auth = express.Router(); 
 
+auth.get("/", (req, res) => {
+    if(req.session.username){
+	res.redirect("/locations");
+    }else{
+	res.redirect("/login");
+    }
+});
+
 auth.get("/login", (req, res) => {
     res.render("login.ejs", {message: ""});
 });
@@ -52,8 +60,6 @@ auth.get("/login", (req, res) => {
 auth.post("/login/check", async (req, res) => {
     let user = await users.findOne({username: req.body.username});
 
-    console.log(user);
-    
     if(user && user.password === req.body.password){
 	req.session.regenerate(function (err) {
 	    if(err){
